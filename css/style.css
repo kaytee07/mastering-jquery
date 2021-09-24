@@ -11,6 +11,7 @@ header{
     border-bottom: 2px solid black;
     font-family:cursive;
     margin-bottom: 20px;
+    justify-content: space-between;
 }
 
 #top-stories{
@@ -36,4 +37,46 @@ header{
     padding:0 20px;
     border: 1px solid rgb(163, 158, 158) ;
     color:rgb(163, 158, 158) ;
+}
+
+.profile-menu{
+    list-style: none;
+}
+
+.profile-menu a{
+    text-decoration: none;
+}
+
+li .profile-submenu{
+    position: absolute;
+    list-style: none;
+    background-color: white;
+    left: 790px;
+    top: 50px;
+    width: 180px;
+    border: 1px solid #aaa;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .3);
+    display: none;
+}
+
+
+.profile-submenu li {
+    padding: 5px 10px;
+}
+
+.profile-submenu.active{
+    display: block;
+}
+
+.profile-submenu li:hover{
+    background-color: #eee;
+}
+
+.profile-submenu li a{
+    color: #333;
+    font-family: sans-serif;
+}
+
+[data-trigger="dropdown"]{
+    padding-bottom:60px ;
 }
